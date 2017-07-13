@@ -1,0 +1,22 @@
+
+body {
+  color: #444;
+}
+
+.contact-methods {
+
+  li {
+    padding: 5px 0;
+    a {
+      display: inline-block;
+      padding: 0;
+      color: inherit;
+
+      .fa {
+        font-size: 24px;
+      }
+    }
+  }
+
+  margin-bottom: 24px;
+}

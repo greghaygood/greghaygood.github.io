@@ -1,0 +1,12 @@
+---
+layout: page
+title: Tags
+---
+
+{% assign tags = site.tags %}
+
+<ul>
+    {% for tag in tags %}
+    <li><a href="{{ tag.url }}/">{{ tag.title }}</a></li>
+    {% endfor %}
+</ul>

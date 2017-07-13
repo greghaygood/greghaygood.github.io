@@ -25,11 +25,43 @@ github_username:  greghaygood
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 gems:
-  - jekyll-feed
+  # - jekyll-feed
 
 google_analytics: UA-298413-8
+
+tag_prefix: /tags/
+
+collections:
+  projects:
+    output: true
+  jobs:
+    output: true
+  tags:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: jobs
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag
+
+show_dir_listing: false
+
+permalink: pretty
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

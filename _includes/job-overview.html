@@ -1,0 +1,27 @@
+{% assign job = include.job %}
+<li class="timeline-inverted">
+
+    <div class="timeline-badge info"></div>
+
+    <div class="timeline-panel grid-block">
+        <div class="timeline-heading">
+
+            <h4 class="timeline-title">{{ job.title }}</h4>
+
+            {% for tag in job.tags %}
+                <a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}.html">{{ tag }}</a>
+            {% endfor %}
+
+            <p>
+                <small class="text-muted">
+
+                </small>
+            </p>
+        </div>
+        <div class="timeline-body">
+
+            {{ job.content }}
+
+        </div>
+    </div>
+</li>

@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+<p>
+    {{ page.content }}
+</p>
+
+<h3>Related Projects</h3>
+
+{% assign projects = site.projects %}
+
+<ul>
+    {% for p in projects %}
+    {% if p.tags contains page.slug %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a> ({{ p.date | date_to_string }} )</li>
+    {% endif %}
+    {% endfor %}
+
+</ul>
