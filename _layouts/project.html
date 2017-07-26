@@ -2,9 +2,15 @@
 layout: page
 ---
 
+
+{% for tag in page.tags %}
+<a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}/">{{ tag }}</a>
+{% endfor %}
+
 <p>
     {{ page.content }}
 </p>
+
 
 <h3>Related Projects</h3>
 
@@ -13,7 +19,8 @@ layout: page
 <ul>
     {% for p in projects %}
     {% if p.tags contains page.slug %}
-    <li><a href="{{ p.url }}">{{ p.title }}</a> ({{ p.year }})</li>
+    <li><a href="{{ p.url }}">{{ p.title }}</a> ({{ p.date | date_to_string }} )</li>
     {% endif %}
     {% endfor %}
+
 </ul>

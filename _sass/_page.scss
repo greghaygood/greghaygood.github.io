@@ -3,6 +3,9 @@ body {
   color: #444;
 }
 
+p.small {
+  font-size: 0.8rem;
+}
 .contact-methods {
 
   li {
@@ -19,4 +22,14 @@ body {
   }
 
   margin-bottom: 24px;
+}
+
+.video-wrapper {
+  max-width: 768px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+
+  .flex-video, .responsive-embed {
+    margin-bottom: 0;
+  }
 }

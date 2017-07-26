@@ -8,7 +8,7 @@ gives me the opportunity to work with different groups, using a variety of
 technologies to help them solve problems (and keep my brain in high gear!). 
 
 Here's an overview of my current positions. For more details and past positions,
-check out my <a target="_blank"
+check out my <a
 href="https://www.linkedin.com/in/greghaygood/">LinkedIn profile</a>.
 
 {% assign sorted_jobs = (site.jobs | sort: 'order' | reverse ) %}
