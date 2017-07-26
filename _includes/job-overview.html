@@ -7,6 +7,7 @@
         <div class="timeline-heading">
 
             <h4 class="timeline-title">{{ job.title }}</h4>
+            <h5 class="timeline-jobtitle">{{ job.job_title }}</h5>
 
             {% for tag in job.tags %}
                 <a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}.html">{{ tag }}</a>
