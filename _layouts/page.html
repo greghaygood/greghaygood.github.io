@@ -5,66 +5,75 @@
 
 <body>
 
-<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <div class="off-canvas position-left reveal-for-medium" id="my-info" data-off-canvas data-position="left">
-            <div class="row column">
-                <br>
-                <img class="thumbnail" src="https://www.gravatar.com/avatar/4f7f64cb8ad58bd0606968c0d61bc0bf.jpg?s=150">
-                <h5>Greg Haygood</h5>
-                <h6 class="subheader"><i class="fa fa-map-marker"></i>Atlanta, GA</h6>
-                <p class="small">
+      <div class="off-canvas position-left reveal-for-medium" id="my-info" data-off-canvas data-position="left">
+        <div class="row column">
+          <br>
+          <img class="thumbnail" src="https://www.gravatar.com/avatar/4f7f64cb8ad58bd0606968c0d61bc0bf.jpg?s=150">
+          <h5>Greg Haygood</h5>
+          <h6 class="subheader"><i class="fa fa-map-marker"></i>Atlanta, GA</h6>
+          <p class="small">
 
-                I love building things, especially digital things. Websites and
-                mobile apps are my main passion, but if it has a screen and
-                talks to a server somewhere, I'm happy. </p> <hr />
+            I love building things, especially digital things. Websites and
+            mobile apps are my main passion, but if it has a screen and
+            talks to a server somewhere, I'm happy. </p> <hr />
 
-                {% include nav.html %}
+            {% include nav.html %}
 
-                <hr />
-                <h6>Say Hi!</h6>
-                <ul class="menu simple contact-methods">
-                    <li>
-                        <a href="https://www.linkedin.com/in/greghaygood/"><i
-                                class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/greghaygood"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/greghaygood"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a
-                           href="https://docs.google.com/forms/d/e/1FAIpQLSdNtj7gIHtvTGSMGnwINj9o91WRXndXLmM74aN1Ywz6AIYHYA/viewform?usp=sf_link"><i
-                                class="fa fa-envelope"></i></a>
-                    </li>
-                </ul>
+
+
+            <hr />
+            <h6>Say Hi!</h6>
+            <ul class="menu simple contact-methods">
+              <li>
+                <a href="https://www.linkedin.com/in/greghaygood/"><i
+                  class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/greghaygood"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/greghaygood"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdNtj7gIHtvTGSMGnwINj9o91WRXndXLmM74aN1Ywz6AIYHYA/viewform?usp=sf_link"><i
+                  class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+
+
+              <footer class="site-footer">
+
+                Enjoyably built with <a href="https://jekyllrb.com/">JekyllRB</a>.
+
+              </footer>
             </div>
-        </div>
-        <div class="off-canvas-content" data-off-canvas-content>
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
             <div class="title-bar hide-for-medium">
-                <div class="title-bar-left">
-                    <button class="menu-icon" type="button" data-open="my-info"></button>
-                    <span class="title-bar-title">Greg Haygood</span>
-                </div>
+              <div class="title-bar-left">
+                <button class="menu-icon" type="button" data-open="my-info"></button>
+                <span class="title-bar-title">Greg Haygood</span>
+              </div>
             </div>
 
             <div class="row column">
 
-                <header>
-                    <h1>{{ page.title | escape }}</h1>
-                </header>
-                {{ content }}
+              <header>
+                <h1>{{ page.title | escape }}</h1>
+              </header>
+              {{ content }}
 
             </div>
 
+          </div>
+
         </div>
-    </div>
-</div>
+      </div>
 
-{% include footer.html %}
+      {% include footer.html %}
 
-
-</body>
-</html>
+    </body>
+    </html>

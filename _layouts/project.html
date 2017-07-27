@@ -2,13 +2,20 @@
 layout: page
 ---
 
+{% if page.project_url contains "http" %}
+<p>
+Live site:
+<a href="{{page.project_url}}">{{ page.project_url }}</a>
+</p>
+{% endif %}
+
 {% include tags.html tags=page.tags %}
 
 <p>
     {{ page.content }}
 </p>
 
-
+<!--
 <h3>Related Projects</h3>
 
 {% assign projects = site.projects %}
@@ -21,3 +28,4 @@ layout: page
     {% endfor %}
 
 </ul>
+-->
