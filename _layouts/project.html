@@ -2,10 +2,7 @@
 layout: page
 ---
 
-
-{% for tag in page.tags %}
-<a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}/">{{ tag }}</a>
-{% endfor %}
+{% include tags.html tags=page.tags %}
 
 <p>
     {{ page.content }}

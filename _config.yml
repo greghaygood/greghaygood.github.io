@@ -40,7 +40,7 @@ collections:
     output: true
   tags:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name.html
 
 defaults:
   - scope:
@@ -61,7 +61,7 @@ defaults:
 
 show_dir_listing: false
 
-permalink: pretty
+# permalink: pretty
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

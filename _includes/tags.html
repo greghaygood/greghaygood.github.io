@@ -1,5 +1,5 @@
 {% assign tags = include.tags %}
 
 {% for tag in tags %}
-<a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}/">{{ tag }}</a>
+<a class="hollow button tiny" href="{{ site.tag_prefix }}{{ tag | slugify }}.html">{{ tag }}</a>
 {% endfor %}
